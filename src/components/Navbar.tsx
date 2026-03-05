@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Why Us", href: "#why-us" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
+  { label: "Booking", href: "/booking", isRoute: true },
 ];
 
 export const Navbar = () => {
@@ -33,7 +34,7 @@ export const Navbar = () => {
         }`}
       >
         <div className="section-padding flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <img src={logo} alt="HabariHeaven" className="h-10 w-10 rounded-full object-cover" />
             <span className="font-display text-lg font-semibold text-foreground tracking-wide">
               Habari<span className="text-primary">Heaven</span>
@@ -42,13 +43,23 @@ export const Navbar = () => {
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm font-body font-light text-foreground/80 hover:text-primary transition-colors duration-300 tracking-wider uppercase"
-              >
-                {link.label}
-              </a>
+              link.isRoute ? (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className="text-sm font-body font-light text-foreground/80 hover:text-primary transition-colors duration-300 tracking-wider uppercase"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm font-body font-light text-foreground/80 hover:text-primary transition-colors duration-300 tracking-wider uppercase"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
             <ThemeToggle />
             <Link
@@ -56,6 +67,12 @@ export const Navbar = () => {
               className="px-6 py-2.5 text-sm font-medium bg-primary text-primary-foreground rounded-sm hover:bg-gold-light transition-colors duration-300 tracking-wider uppercase"
             >
               Plan Your Journey
+            </Link>
+            <Link
+              to="/booking"
+              className="px-6 py-2.5 text-sm font-medium bg-secondary text-secondary-foreground rounded-sm hover:bg-gold-light transition-colors duration-300 tracking-wider uppercase border border-primary/30"
+            >
+              Book Now
             </Link>
           </div>
 
@@ -109,18 +126,44 @@ export const Navbar = () => {
             </button>
             <ThemeToggle />
             {navLinks.map((link, index) => (
-              <motion.a
+              <motion.div
                 key={link.label}
-                href={link.href}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 + 0.2 }}
-                onClick={() => setMobileOpen(false)}
-                className="text-2xl font-display text-foreground hover:text-primary transition-colors"
               >
-                {link.label}
-              </motion.a>
+                {link.isRoute ? (
+                  <Link
+                    to={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-2xl font-display text-foreground hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-2xl font-display text-foreground hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )}
+              </motion.div>
             ))}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navLinks.length * 0.1 + 0.3 }}
+            >
+              <Link
+                to="/booking"
+                onClick={() => setMobileOpen(false)}
+                className="mt-4 px-8 py-3 bg-secondary text-secondary-foreground font-body uppercase tracking-widest text-sm border border-primary/30"
+              >
+                Book Now
+              </Link>
+            </motion.div>
             <motion.a
               href="/plan-journey"
               initial={{ opacity: 0, y: 20 }}

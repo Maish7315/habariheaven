@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Calendar, Plane, Home, Building, Car, Compass, ArrowLeft, Send } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { Footer } from "@/components/Footer";
 
 const services = [
   {
@@ -24,7 +25,7 @@ const services = [
   },
   {
     icon: Building,
-    title: "Real Estate",
+    title: "Property Management",
     description: "Invest in Kenya's growing property market with our expert guidance.",
     highlights: ["Land Acquisition", "Property Management", "Investment Advisory", "Legal Assistance"]
   }
@@ -241,7 +242,7 @@ export const PlanJourney = () => {
                   <option value="safari">Safari Tours</option>
                   <option value="accommodation">Accommodation</option>
                   <option value="transport">VIP Transport</option>
-                  <option value="realestate">Real Estate</option>
+                  <option value="property">Property Management</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -261,14 +262,8 @@ export const PlanJourney = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 section-padding bg-navy-deep border-t border-border/30">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground font-body text-sm">
-            © {new Date().getFullYear()} HabariHeaven Hospitality. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      {/* Footer with Payment Methods */}
+      <Footer />
     </div>
   );
 };

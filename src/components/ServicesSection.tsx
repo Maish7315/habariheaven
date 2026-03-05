@@ -21,7 +21,7 @@ const services = [
   },
   {
     icon: Building,
-    title: "Real Estate Services",
+    title: "Property Management Services",
     description: "Comprehensive property services for buyers, sellers, and investors with deep local expertise.",
     image: realestateImg,
   },
