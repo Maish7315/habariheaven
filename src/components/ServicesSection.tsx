@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
-import { Home, Car, Building, MapPin, Compass, Ticket } from "lucide-react";
+import { Home, Car, Building, Compass, Ticket } from "lucide-react";
 import accommodationImg from "@/assets/accommodation.jpg";
 import transportImg from "@/assets/transport.jpg";
 import realestateImg from "@/assets/realestate.jpg";
@@ -22,13 +22,7 @@ const services = [
   {
     icon: Building,
     title: "Property Management Services",
-    description: "Comprehensive property services for buyers, sellers, and investors with deep local expertise.",
-    image: realestateImg,
-  },
-  {
-    icon: MapPin,
-    title: "Land Sales",
-    description: "Prime land acquisition from urban development plots to expansive rural estates.",
+    description: "Comprehensive property management services for Landlords & collection of rents with efficiency.",
     image: realestateImg,
   },
   {
