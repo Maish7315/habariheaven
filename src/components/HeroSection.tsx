@@ -88,8 +88,7 @@ export const HeroSection = () => {
             transition={{ duration: 1, delay: 2.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="luxury-heading text-4xl md:text-6xl lg:text-7xl max-w-4xl"
           >
-            All-in-One Travel & Property Solutions{" "}
-            <span className="text-gradient-gold">Under One Roof</span>
+            PREMIUM HOSPITALITY, LUXURY, TRANSPORT AND PROPERTY MANAGMENT SERVICES IN KENYA - CURATED FOR DISCERNING TRAVELER AND INVESTOR.
           </motion.h1>
         </div>
 

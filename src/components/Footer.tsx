@@ -134,11 +134,8 @@ export const Footer = () => {
                 </a>
                 <div className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light pt-2">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                  6th floor kimathi street-Nairobi
+                  Cross Roads Plaza, 1st Floor, Westlands Road and Lyric House, 6th Floor, Kimathi Street - Nairobi
                 </div>
-                <p className="text-xs text-muted-foreground/60 font-body font-light pl-7">
-                  Physical address details provided upon request or on booking.
-                </p>
               </div>
             </div>
           </div>
@@ -253,7 +250,7 @@ export const Footer = () => {
           href="https://wa.me/254797290637"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#20BD5A] transition-all duration-300 md:bottom-8 md:right-8"
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#20BD5A] transition-all duration-300"
           aria-label="Chat on WhatsApp"
           style={{
             animation: 'lazy-bounce 2s ease-in-out infinite',
