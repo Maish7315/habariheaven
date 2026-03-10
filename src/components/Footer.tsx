@@ -117,6 +117,13 @@ export const Footer = () => {
                   ahmed@habariheaven.com
                 </a>
                 <a
+                  href="mailto:nasra@habariheaven.com"
+                  className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light hover:text-primary transition-colors duration-300"
+                >
+                  <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                  nasra@habariheaven.com
+                </a>
+                <a
                   href="https://www.habariheaven.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -127,7 +134,7 @@ export const Footer = () => {
                 </a>
                 <div className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light pt-2">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                  Cross Roads Plaza 1st Floor, Westlands Road & Lyric House, Kimathi Street Nairobi
+                  6th floor kimathi street-Nairobi
                 </div>
                 <p className="text-xs text-muted-foreground/60 font-body font-light pl-7">
                   Physical address details provided upon request or on booking.

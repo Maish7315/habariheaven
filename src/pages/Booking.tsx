@@ -61,7 +61,7 @@ const paymentMethods = [
 const serviceTypes = [
   { id: "accommodation", label: "Accommodation", icon: Home, description: "Hotel bookings, luxury stays, and resorts" },
   { id: "transport", label: "Transport", icon: Plane, description: "Airport transfers, car rentals, and guided tours" },
-  { id: "property", label: "Property Management", icon: Briefcase, description: "Property viewing, buying, and rental services" },
+  { id: "property", label: "Property Management", icon: Briefcase, description: "Comprehensive property management services for Landlords & collection of rents with efficiency" },
   { id: "safari", label: "Safari & Tours", icon: Users, description: "Wildlife safaris, national park tours, and adventures" },
 ];
 
@@ -392,8 +392,9 @@ const Booking = () => {
                   </p>
                   <div className="space-y-2 text-sm">
                     <p><strong>Phone:</strong> +254 797 290 637</p>
-                    <p><strong>Email:</strong> ahmed@habariheaven.com</p>
+                    <p><strong>Email:</strong> ahmed@habariheaven.com / nasra@habariheaven.com</p>
                     <p><strong>WhatsApp:</strong> +254 797 290 637</p>
+                    <p><strong>Location:</strong> 6th floor kimathi street-Nairobi</p>
                   </div>
                 </CardContent>
               </Card>
