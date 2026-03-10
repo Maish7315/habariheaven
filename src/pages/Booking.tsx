@@ -9,6 +9,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "@/components/ui/calendar";
 import { CheckCircle, Calendar as CalendarIcon, Users, Home, Briefcase, Plane } from "lucide-react";
+import visaIcon from "@/assets/visa.webp";
+import mpesaIcon from "@/assets/mpesa.webp";
 
 // Payment method links - users will be redirected to respective payment gateways
 const paymentMethods = [
@@ -47,6 +49,12 @@ const paymentMethods = [
     url: "https://www.americanexpress.com/",
     description: "Pay with American Express",
     color: "bg-[#006FCF] hover:bg-[#0087f7]"
+  },
+  {
+    name: "Binance",
+    url: "https://www.binance.com/",
+    description: "Pay with Cryptocurrency via Binance",
+    color: "bg-[#F3BA2F] hover:bg-[#f5c33f]"
   }
 ];
 
@@ -297,12 +305,10 @@ const Booking = () => {
                           </svg>
                         )}
                         {method.name === "M-Pesa" && (
-                          <span className="font-bold text-sm mb-1">M-PESA</span>
+                          <img src={mpesaIcon} alt="M-Pesa" className="w-10 h-10 object-contain" />
                         )}
                         {method.name === "Visa" && (
-                          <svg viewBox="0 0 50 16" className="w-10 h-6 mb-2">
-                            <path fill="white" d="M19.13 15.34h-3.6l2.25-13.92h3.6l-2.25 13.92zm9.53-13.92l-2.61 9.03-.18-1.3-.01-1.22q-.42-.78-1.03-1.14l-2.23 5.65h3.59l3.83-12.02h-3.36zm-12.68 0l-2.25 13.92h-3.6l2.25-13.92h3.6zm5.68 5.68l-.79-3.05h-.07q-.36.68-.9 1.05l-1.76-4.68h3.78l-.26 1.03h2.38l.62-1.03h-5.12l-.14.56h2.24l.22 2.12 1.98-2.12h2.16l-3.24 12.02h-3.57l.71-5.58z"/>
-                          </svg>
+                          <img src={visaIcon} alt="Visa" className="w-12 h-8 object-contain" />
                         )}
                         {method.name === "Mastercard" && (
                           <svg viewBox="0 0 40 25" className="w-8 h-5 mb-2">
@@ -313,6 +319,11 @@ const Booking = () => {
                         {method.name === "American Express" && (
                           <svg viewBox="0 0 30 20" className="w-8 h-5 mb-2">
                             <path fill="white" d="M3 0h24v20H3V0zm3 3h18v14H6V3zm2 2v2h2V5H8zm0 4v6h2V9H8zm3-4v10h2V5h-2zm3 0v10h2V9h-2V5h-2zm3 0v10h2V5h-2z"/>
+                          </svg>
+                        )}
+                        {method.name === "Binance" && (
+                          <svg viewBox="0 0 24 24" className="w-8 h-8 mb-2">
+                            <path fill="white" d="M12 0L1.716 6.855l.858 2.058L12 4.778l9.426 4.135.858-2.058L12 0zm0 9.923L4.488 14.4l-.515 1.23L12 11.135l8.027 3.495-.515-1.23L12 9.923zM4.856 17.35l-.858 2.058L12 24l7.002-4.592-.858-2.058L12 20.146l-7.144-2.796z"/>
                           </svg>
                         )}
                         <span className="text-xs font-medium">{method.name}</span>
@@ -380,9 +391,9 @@ const Booking = () => {
                     please contact us directly:
                   </p>
                   <div className="space-y-2 text-sm">
-                    <p><strong>Phone:</strong> +254 (0) 712 345 678</p>
-                    <p><strong>Email:</strong> bookings@habariheaven.com</p>
-                    <p><strong>WhatsApp:</strong> +254 (0) 731 234 567</p>
+                    <p><strong>Phone:</strong> +254 797 290 637</p>
+                    <p><strong>Email:</strong> ahmed@habariheaven.com</p>
+                    <p><strong>WhatsApp:</strong> +254 797 290 637</p>
                   </div>
                 </CardContent>
               </Card>

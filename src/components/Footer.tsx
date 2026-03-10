@@ -1,6 +1,8 @@
 import { ScrollReveal } from "./ScrollReveal";
-import { Phone, Mail, MapPin, Globe, Instagram, Linkedin, Facebook, Twitter, CreditCard, Smartphone, MessageCircle } from "lucide-react";
-import logo from "@/assets/logo.jpeg";
+import { Phone, Mail, MapPin, Globe, Instagram, Linkedin, Facebook, CreditCard, Smartphone, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.webp";
+import visaIcon from "@/assets/visa.webp";
+import mpesaIcon from "@/assets/mpesa.webp";
 
 const footerLinks = [
   { label: "About", href: "#about" },
@@ -46,6 +48,12 @@ const paymentMethods = [
     icon: "https://www.americanexpress.com/content/dam/amex/us/merchant/default-tools/global-elements/Logos/AXP_Logo_D_Print_4c.png",
     url: "https://www.americanexpress.com/",
     description: "Pay with American Express"
+  },
+  {
+    name: "Binance",
+    icon: "https://cryptologos.cc/logos/binance-coin-bnb-logo.png",
+    url: "https://www.binance.com/",
+    description: "Pay with Cryptocurrency via Binance"
   }
 ];
 
@@ -89,24 +97,24 @@ export const Footer = () => {
               <h4 className="font-display text-sm uppercase tracking-widest text-primary mb-6">Contact</h4>
               <div className="space-y-4">
                 <a
-                  href="tel:+2540712345678"
+                  href="tel:+254797290637"
                   className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light hover:text-primary transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                  +254 (0) 712 345 678
+                  +254 797 290 637
                 </a>
                 <a
-                  href="tel:+2540731234567"
+                  href="tel:+254713506253"
                   className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light hover:text-primary transition-colors duration-300 pl-7"
                 >
-                  +254 (0) 731 234 567
+                  +254 713 506 253
                 </a>
                 <a
-                  href="mailto:info@habariheaven.com"
+                  href="mailto:ahmed@habariheaven.com"
                   className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light hover:text-primary transition-colors duration-300"
                 >
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                  info@habariheaven.com
+                  ahmed@habariheaven.com
                 </a>
                 <a
                   href="https://www.habariheaven.com"
@@ -119,7 +127,7 @@ export const Footer = () => {
                 </a>
                 <div className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light pt-2">
                   <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                  HabariHeaven Ltd, Nairobi, Kenya
+                  Cross Roads Plaza 1st Floor, Westlands Road & Lyric House, Kimathi Street Nairobi
                 </div>
                 <p className="text-xs text-muted-foreground/60 font-body font-light pl-7">
                   Physical address details provided upon request or on booking.
@@ -131,7 +139,7 @@ export const Footer = () => {
           {/* Social Media */}
           <div className="flex justify-center gap-6 mt-8">
             <a
-              href="https://instagram.com/habariheaven"
+              href="https://www.instagram.com/habariheaven?igsh=MW55enZpZ3duazVvcQ%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 border border-border/30 hover:border-primary/50 hover:bg-secondary transition-all duration-300"
@@ -140,16 +148,18 @@ export const Footer = () => {
               <Instagram className="w-5 h-5 text-primary" />
             </a>
             <a
-              href="https://linkedin.com/company/habariheaven-ltd"
+              href="https://www.tiktok.com/@habariheaven?_r=1&_t=ZS-94FEoaHmXre"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 border border-border/30 hover:border-primary/50 hover:bg-secondary transition-all duration-300"
-              aria-label="LinkedIn"
+              aria-label="TikTok"
             >
-              <Linkedin className="w-5 h-5 text-primary" />
+              <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+              </svg>
             </a>
             <a
-              href="https://facebook.com/habariheaven"
+              href="https://www.facebook.com/share/18B8S4KMte/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 border border-border/30 hover:border-primary/50 hover:bg-secondary transition-all duration-300"
@@ -158,13 +168,15 @@ export const Footer = () => {
               <Facebook className="w-5 h-5 text-primary" />
             </a>
             <a
-              href="https://twitter.com/habariheaven"
+              href="https://x.com/habariheaven"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 border border-border/30 hover:border-primary/50 hover:bg-secondary transition-all duration-300"
-              aria-label="Twitter"
+              aria-label="X"
             >
-              <Twitter className="w-5 h-5 text-primary" />
+              <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
             </a>
           </div>
 
@@ -196,15 +208,10 @@ export const Footer = () => {
                       </svg>
                     )}
                     {method.name === "M-Pesa" && (
-                      <svg viewBox="0 0 24 24" className="w-10 h-10">
-                        <circle cx="12" cy="12" r="10" fill="#00A651"/>
-                        <text x="12" y="16" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">M-PESA</text>
-                      </svg>
+                      <img src={mpesaIcon} alt="M-Pesa" className="w-10 h-10 object-contain" />
                     )}
                     {method.name === "Visa" && (
-                      <svg viewBox="0 0 50 16" className="w-12 h-10">
-                        <path fill="#1A1F71" d="M19.13 15.34h-3.6l2.25-13.92h3.6l-2.25 13.92zm9.53-13.92l-2.61 9.03-.18-1.3-.01-1.22q-.42-.78-1.03-1.14l-2.23 5.65h3.59l3.83-12.02h-3.36zm-12.68 0l-2.25 13.92h-3.6l2.25-13.92h3.6zm5.68 5.68l-.79-3.05h-.07q-.36.68-.9 1.05l-1.76-4.68h3.78l-.26 1.03h2.38l.62-1.03h-5.12l-.14.56h2.24l.22 2.12 1.98-2.12h2.16l-3.24 12.02h-3.57l.71-5.58z"/>
-                      </svg>
+                      <img src={visaIcon} alt="Visa" className="w-12 h-10 object-contain" />
                     )}
                     {method.name === "Mastercard" && (
                       <svg viewBox="0 0 40 25" className="w-10 h-10">
@@ -216,6 +223,11 @@ export const Footer = () => {
                     {method.name === "American Express" && (
                       <svg viewBox="0 0 30 20" className="w-10 h-10">
                         <path fill="#006FCF" d="M3 0h24v20H3V0zm3 3h18v14H6V3zm2 2v2h2V5H8zm0 4v6h2V9H8zm3-4v10h2V5h-2zm3 0v10h2V9h-2V5h-2zm3 0v10h2V5h-2z"/>
+                      </svg>
+                    )}
+                    {method.name === "Binance" && (
+                      <svg viewBox="0 0 24 24" className="w-10 h-10">
+                        <path fill="#F3BA2F" d="M12 0L1.716 6.855l.858 2.058L12 4.778l9.426 4.135.858-2.058L12 0zm0 9.923L4.488 14.4l-.515 1.23L12 11.135l8.027 3.495-.515-1.23L12 9.923zM4.856 17.35l-.858 2.058L12 24l7.002-4.592-.858-2.058L12 20.146l-7.144-2.796z"/>
                       </svg>
                     )}
                   </div>
@@ -231,10 +243,10 @@ export const Footer = () => {
 
         {/* WhatsApp Floating Button */}
         <a
-          href="https://wa.me/254731234567"
+          href="https://wa.me/254797290637"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#20BD5A] transition-all duration-300"
+          className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#20BD5A] transition-all duration-300 md:bottom-8 md:right-8"
           aria-label="Chat on WhatsApp"
           style={{
             animation: 'lazy-bounce 2s ease-in-out infinite',

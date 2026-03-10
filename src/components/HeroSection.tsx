@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo.webp";
 
 export const HeroSection = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-background">
+    <section className="relative h-screen w-full overflow-hidden bg-background pt-16">
       {/* Animated geometric lines */}
       <div className="absolute inset-0 z-10 pointer-events-none">
         {/* Top line */}
@@ -77,7 +77,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 2.5, ease: "easeOut" }}
-          className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-8 shadow-2xl ring-2 ring-primary/30"
+          className="w-48 h-48 md:w-64 md:h-64 rounded-full object-contain mb-8 shadow-2xl ring-2 ring-primary/30 bg-white/10"
         />
 
         {/* Heading stagger */}
