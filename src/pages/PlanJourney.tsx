@@ -40,7 +40,7 @@ const process = [
 
 export const PlanJourney = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-navy-deep to-background" />

@@ -32,10 +32,10 @@ export const CTASection = () => {
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.6}>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap w-full max-w-md mx-auto">
             <Link
               to="/plan-journey"
-              className="px-8 py-4 bg-primary text-primary-foreground font-body font-medium uppercase tracking-[0.2em] text-sm hover:bg-gold-light transition-all duration-500 gold-glow whitespace-nowrap"
+              className="px-6 md:px-8 py-4 bg-primary text-primary-foreground font-body font-medium uppercase tracking-[0.2em] text-sm hover:bg-gold-light transition-all duration-500 gold-glow whitespace-nowrap text-center"
             >
               Choose HabariHeaven Today
             </Link>

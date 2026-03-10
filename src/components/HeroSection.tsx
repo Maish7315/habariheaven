@@ -98,7 +98,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 3.2 }}
           className="mt-6 text-lg md:text-xl text-muted-foreground font-body font-light max-w-2xl tracking-wide"
         >
-          Premium hospitality, luxury transport, and real estate services in Kenya — curated for the discerning traveler and investor.
+          Premium hospitality, luxury, transport and property management services in Kenya - curated for discerning traveler and Investor.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -106,17 +106,17 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 3.5 }}
-          className="mt-10 flex flex-col sm:flex-row gap-4"
+          className="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-md"
         >
           <Link
             to="/plan-journey"
-            className="px-10 py-4 bg-primary text-primary-foreground font-body font-medium uppercase tracking-[0.2em] text-sm hover:bg-gold-light transition-all duration-500 gold-glow"
+            className="px-6 md:px-10 py-4 bg-primary text-primary-foreground font-body font-medium uppercase tracking-[0.2em] text-sm hover:bg-gold-light transition-all duration-500 gold-glow text-center whitespace-nowrap"
           >
             Explore Services
           </Link>
           <Link
             to="/plan-journey"
-            className="px-10 py-4 border border-primary/40 text-foreground font-body font-light uppercase tracking-[0.2em] text-sm hover:bg-primary/10 hover:border-primary transition-all duration-500"
+            className="px-6 md:px-10 py-4 border border-primary/40 text-foreground font-body font-light uppercase tracking-[0.2em] text-sm hover:bg-primary/10 hover:border-primary transition-all duration-500 text-center whitespace-nowrap"
           >
             Plan Your Journey
           </Link>

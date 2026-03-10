@@ -90,7 +90,7 @@ const Booking = () => {
   };
 
   return (
-    <main className="bg-background min-h-screen">
+    <main className="bg-background min-h-screen overflow-x-hidden">
       <Navbar />
       
       {/* Hero Section */}
@@ -284,14 +284,14 @@ const Booking = () => {
                   <CardDescription>Select your preferred payment gateway</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {paymentMethods.map((method) => (
                       <a
                         key={method.name}
                         href={method.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex flex-col items-center justify-center p-4 rounded-lg ${method.color} text-white transition-all duration-300 hover:scale-105 hover:shadow-lg`}
+                        className={`flex flex-col items-center justify-center p-3 sm:p-4 rounded-lg ${method.color} text-white transition-all duration-300 hover:scale-105 hover:shadow-lg overflow-hidden`}
                         title={method.description}
                       >
                         {method.name === "PayPal" && (

@@ -59,7 +59,7 @@ const paymentMethods = [
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="py-20 section-padding bg-navy-deep border-t border-border/30">
+    <footer id="contact" className="py-20 section-padding bg-navy-deep border-t border-border/30 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="grid md:grid-cols-3 gap-12 mb-16">
@@ -132,9 +132,9 @@ export const Footer = () => {
                   <Globe className="w-4 h-4 text-primary flex-shrink-0" />
                   www.habariheaven.com
                 </a>
-                <div className="flex items-center gap-3 text-sm text-muted-foreground font-body font-light pt-2">
-                  <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                  Cross Roads Plaza, 1st Floor, Westlands Road and Lyric House, 6th Floor, Kimathi Street - Nairobi
+                <div className="flex items-start gap-3 text-sm text-muted-foreground font-body font-light pt-2">
+                  <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="break-words">Cross Roads Plaza, 1st Floor, Westlands Road and Lyric House, 6th Floor, Kimathi Street - Nairobi</span>
                 </div>
               </div>
             </div>
